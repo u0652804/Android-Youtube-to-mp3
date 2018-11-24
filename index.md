@@ -28,7 +28,20 @@ Syntax highlighted code block
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-![Android](/image/android.png)
+<style>
+#inline1 li{
+ display:inline;
+ margin-right:25px;
+}
+</style>
+
+<div id = inline1>
+ <ul >
+  <li> ![Android](/image/android.png) </li>
+  <li>B</li>
+  <li>C</li>
+ </ul>
+</div>
 
 ### Jekyll Themes
 
