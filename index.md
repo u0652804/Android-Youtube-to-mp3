@@ -11,10 +11,6 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 ```markdown
 Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
-
 - Bulleted
 - List
 
@@ -28,21 +24,24 @@ Syntax highlighted code block
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
+![Android](/image/android.png)
+
+<html>
+<head>
 <style>
 #inline1 li{
  display:inline;
  margin-right:25px;
 }
 </style>
-
-<div id = inline1>
- <ul >
-  <li> ![Android](/image/android.png) </li>
+<div id = "inline1">
+ <ul>
+  <li><img src = "/image/android.png"></img></li>
   <li>B</li>
   <li>C</li>
  </ul>
 </div>
-
+</head>
 ### Jekyll Themes
 
 Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/u0652804/Youtube-to-mp3/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
