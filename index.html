@@ -1,0 +1,84 @@
+<html>
+<head>
+ <style>
+.button {
+  display: inline-block;
+  padding: 7px 7px
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.container {
+  position: relative;
+}
+
+.center {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+ <div class="center">
+  <input name="texturl" type="text" class="textbox" id="texturl" placeholder="url paste" title="" value=""class="center">
+  <button class="button" onclick="Convert()">To mp3</button></br></br>
+
+  <iframe id="ibtn" width="250px" height="60px" scrolling="no" style="border:none;" src="https://www.download-mp3-youtube.com/api/?api_key=MzM2MjQ4ODE0&format=mp3&video_id=HQGIO0q90U4"></iframe>
+ </div>
+</div>
+
+<!-- <p id="demo">https://youtu.be/M9FPQjm4rzU</p> -->
+</body>
+
+<script>
+  //function myFunction() {
+  //  document.getElementById("demo").innerHTML = document.getElementById("texturl").value;
+  //}
+</script>
+
+<script>
+   document.getElementById("ibtn").style.visibility = "hidden";
+
+   function Convert() {
+     //https://youtu.be/2tXNKhHI4Ig
+
+	 var res = document.getElementById("texturl").value.split("https://youtu.be/");
+	 if(res[1] == null)// x: res[1] == "undefined"  o: res[1] == null
+		document.getElementById("demo").innerHTML = "..";
+	 else
+	 {
+		//document.getElementById("demo").innerHTML = res[1];
+		document.getElementById("ibtn").src = "https://www.download-mp3-youtube.com/api/?api_key=MzM2MjQ4ODE0&format=mp3&video_id="
+		+ res[1];
+	 }
+
+	 //clear text
+	 document.getElementById("texturl").value = "";
+
+	 document.getElementById("ibtn").style.visibility = "visible";
+   }
+ </script>
+</html>
+
