@@ -6,16 +6,11 @@
 
 ### 即可在Android手機上運行
 
-print below :
+## web Demo 畫面
 
-![print](/designDocument/print.png)
+![web Demo](/image/webDemo.png)
 
-# Method 
+## Android Demo 畫面
 
-Use dilation method to do.
-
-# Design
-![design](/designDocument/StarDilateMethod_design.png)
-
-# Demo
-![demo](/designDocument/demo.PNG)
+![Android Demo](/image/androidDemo1.png)
+![Android Demo](/image/androidDemo2.png)
