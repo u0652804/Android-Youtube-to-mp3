@@ -8,7 +8,7 @@
 
 ## web Demo 畫面
 
-![web Demo](/image/webDemo.png)
+![web Demo](/image/webDemo.PNG)
 
 ## Android Demo 畫面
 
